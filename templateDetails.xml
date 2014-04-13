@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.2" type="template" client="site" method="upgrade">
+
+	<name>jflex</name>
+	<version>1.00</version>
+	<creationDate>02.01.2014</creationDate>
+	<author>Johannes Hock</author>
+	<authorEmail>info@adhocgrafx.de</authorEmail>
+	<authorUrl>http://www.adhocgrafx.de</authorUrl>
+	<copyright>Copyright (C) 2014 Johannes Hock. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<description>
+		<![CDATA[<h1>JFlex</h1>
+			<h2>a responsive Joomla! template</h2>
+			<p>&copy; 2014 <a href="http://www.adhocgrafx.de" target="_blank">adhocgraFX</a></p>
+			<p><img src="../templates/jflex/template_preview.png" /></p>
+			<h2>Modulpositionen</h2>
+			<ul>
+			<li>nav</li>
+			<li>nav_module in nav e.g. search, login</li>
+			<li>breadcrumbs</li>
+			<li>slideshow</li>
+			<li>head_row, content_head_row</li>
+			<li>sidebar, nav-mobile in sidebar + nav</li>
+			<li>bottom_row, content_bottom_row</li>
+			<li>footer</li>
+			<li>debug</li>
+			</ul>
+			<p>Created by <a href="http://www.adhocgrafx.de" target="_blank">Johannes Hock | adhocgrafx.de</a>.</p>
+		]]>
+	</description>
+	<files>
+		<folder>css</folder>
+        	<folder>fonts</folder>
+        	<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>languages</folder>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+	</files>
+	<positions>
+		<position>nav</position>
+        	<position>nav_mobile</position>
+        	<position>nav_module</position>
+		<position>breadcrumbs</position>
+        	<position>slideshow</position>
+        	<position>head_row</position>
+        	<position>content_head_row</position>
+        	<position>content_bottom_row</position>
+        	<position>sidebar</position>
+        	<position>bottom_row</position>
+		<position>footer</position>
+		<position>debug</position>
+	</positions>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.tpl_jflex_j3.ini</language>
+		<language tag="de-DE">de-DE.tpl_jflex_j3.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="COLORS">
+				<field name="TPL_JF3_FIELD_SPACER_FONTCOLOR_DESC" type="spacer" hr="false" />
+				<field name="headcolor" type="color" default="#666666" label="TPL_JF3_FIELD_HCOLOR_LABEL" description="TPL_JF3_FIELD_HCOLOR_DESC" size="7" class="color" ></field>
+				<field name="fontcolor" type="color" default="#444444" label="TPL_JF3_FIELD_PCOLOR_LABEL" description="TPL_JF3_FIELD_PCOLOR_DESC" size="7" class="color" ></field>
+				<field name="bodycolor" type="color" default="#f9f9f9" label="TPL_JF3_FIELD_BCOLOR_LABEL" description="TPL_JF3_FIELD_BCOLOR_DESC" size="7" class="color" ></field>
+				<field name="linkcolor" type="color" default="#1E90FF" label="TPL_JF3_FIELD_ACOLOR_LABEL" description="TPL_JF3_FIELD_ACOLOR_DESC" size="7" class="color" ></field>
+				<field name="hovercolor" type="color" default="#00BFFF" label="TPL_JF3_FIELD_OCOLOR_LABEL" description="TPL_JF3_FIELD_OCOLOR_DESC" size="7" class="color" ></field>
+				<field name="TPL_JF3_FIELD_SPACER_HEADCOLOR_DESC" type="spacer" hr="false" />
+                <field name="headercolor" type="color" default="#BDC3C7" label="TPL_JF3_FIELD_HRCOLOR_LABEL" description="TPL_JF3_FIELD_HRCOLOR_DESC" size="7" class="color" ></field>
+                <field name="footercolor" type="color" default="#dddddd" label="TPL_JF3_FIELD_FRCOLOR_LABEL" description="TPL_JF3_FIELD_FRCOLOR_DESC" size="7" class="color" ></field>
+                <field name="headrowcolor" type="color" default="#eeeeee" label="TPL_JF3_FIELD_HROWCOLOR_LABEL" description="TPL_JF3_FIELD_HROWCOLOR_DESC" size="7" class="color" ></field>
+                <field name="bottomrowcolor" type="color" default="#eeeeee" label="TPL_JF3_FIELD_BROWCOLOR_LABEL" description="TPL_JF3_FIELD_BROWCOLOR_DESC" size="7" class="color" ></field>
+                <field name="TPL_JF3_FIELD_SPACER_TITLECOLOR_DESC" type="spacer" hr="false" />
+                <field name="mtcolor" type="color" default="#666666" label="TPL_JF3_FIELD_MTCOLOR_LABEL" description="TPL_JF3_FIELD_MTCOLOR_DESC" size="7" class="color" ></field>
+                <field name="stcolor" type="color" default="#444444" label="TPL_JF3_FIELD_STCOLOR_LABEL" description="TPL_JF3_FIELD_STCOLOR_DESC" size="7" class="color" ></field>
+            </fieldset>
+            <fieldset name="IMAGES">
+                <field name="TPL_JF3_FIELD_SPACER_HEADER_DESC" type="spacer" hr="false" />
+                <field name="headerbackimage" type="media" label="TPL_JF3_FIELD_HBIMAGE_LABEL" description="TPL_JF3_FIELD_HBIMAGE_DESC" />
+                <field name="TPL_JF3_FIELD_SPACER_HEADERSIDE_DESC" type="spacer" hr="false" />
+                <field name="headerlogo" type="media" label="TPL_JF3_FIELD_HLOGO_LABEL" description="TPL_JF3_FIELD_HLOGO_DESC" />
+                <field name="sitetitle" type="text" default="JFlex" label="TPL_JF3_FIELD_SITETITLE_LABEL" description="TPL_JF3_FIELD_SITETITLE_DESC" filter="string" />
+                <field name="TPL_JF3_FIELD_SPACER_LOGOHTEXT_DESC" type="spacer" hr="false" />
+                <field name="maintitle" type="text" default="~JFlex~" label="TPL_JF3_FIELD_MAINTITLE_LABEL" description="TPL_JF3_FIELD_SITETITLE_DESC" filter="string" />
+                <field name="subtitle" type="text" default="RWD Joomla! Template" label="TPL_JF3_FIELD_SUBTITLE_LABEL" description="TPL_JF3_FIELD_SITETITLE_DESC"  filter="string"  />
+                <field name="TPL_JF3_FIELD_SPACER_PAGEBG_DESC" type="spacer" hr="false" />
+                <field name="bodybackground" type="media" label="TPL_JF3_FIELD_BACKIMAGE_LABEL" description="TPL_JF3_FIELD_BACKIMAGE_DESC" />
+            </fieldset>
+            <fieldset name="FONTS">
+                <field name="TPL_JF3_FIELD_SPACER_FONTFONT_DESC" type="spacer" hr="false" />
+                <field name="headfont" type="list" default="text" label="TPL_JF3_FIELD_HFONT_LABEL" description="TPL_JF3_FIELD_HFONT_DESC">
+					<option value='default'>Default - Template default</option>
+					<option value='alegreya'>Alegreya (serif)</option>
+					<option value='andada'>Andada (slab)</option>
+					<option value='bitter'>Bitter (slab)</option>
+					<option value='droid-sans'>Droid Sans</option>
+					<option value='droid-serif'>Droid Serif</option>
+					<option value='gentium-basic'>Gentium (serif)</option>
+					<option value='kaffeesatz'>Yanone Kaffeesatz (sans)</option>
+					<option value='lato'>Lato (sans)</option>
+					<option value='open-sans-condensed'>Open Sans Condensed</option>
+					<option value='open-sans'>Open Sans</option>
+					<option value='pt-sans-narrow'>PT Sans Narrow</option>
+					<option value='pt-sans'>PT Sans</option>
+					<option value='pt-serif'>PT Serif</option>
+					<option value='source-code-pro'>Source Code Pro (slab mono)</option>
+					<option value='source-sans-pro'>Source Sans Pro</option>
+					<option value='ubuntu-condensed'>Ubuntu Condensed (sans)</option>
+					<option value='ubuntu'>Ubuntu (sans)</option>
+					<option value='vollkorn'>Vollkorn (serif)</option>
+				</field>
+				<field name="bodyfont" type="list" default="text" label="TPL_JF3_FIELD_BFONT_LABEL" description="TPL_JF3_FIELD_BFONT_DESC">
+					<option value='default'>Default - Template default</option>
+					<option value='alegreya'>Alegreya (serif)</option>
+					<option value='andada'>Andada (slab)</option>
+					<option value='bitter'>Bitter (slab)</option>
+					<option value='droid-sans'>Droid Sans</option>
+					<option value='droid-serif'>Droid Serif</option>
+					<option value='gentium-basic'>Gentium (serif)</option>
+					<option value='kaffeesatz'>Yanone Kaffeesatz (sans)</option>
+					<option value='lato'>Lato (sans)</option>
+					<option value='open-sans-condensed'>Open Sans Condensed</option>
+					<option value='open-sans'>Open Sans</option>
+					<option value='pt-sans-narrow'>PT Sans Narrow</option>
+					<option value='pt-sans'>PT Sans</option>
+					<option value='pt-serif'>PT Serif</option>
+					<option value='source-code-pro'>Source Code Pro (slab mono)</option>
+					<option value='source-sans-pro'>Source Sans Pro</option>
+					<option value='ubuntu-condensed'>Ubuntu Condensed (sans)</option>
+					<option value='ubuntu'>Ubuntu (sans)</option>
+					<option value='vollkorn'>Vollkorn (serif)</option>
+				</field>
+                <field name="TPL_JF3_FIELD_SPACER_FONTOPT_DESC" type="spacer" hr="false" />
+                <field name="typesize" type="radio" default="1" label="TPL_JF3_FIELD_TYPESIZE_LABEL" description="TPL_JF3_FIELD_TYPESIZE_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="textindent" type="radio" default="0" label="TPL_JF3_FIELD_TINDENT_LABEL" description="TPL_JF3_FIELD_TINDENT_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="basefontsize" type="text" default="100" label="TPL_JF3_FIELD_BFSIZE_LABEL" description="TPL_JF3_FIELD_BFSIZE_DESC" ></field>
+            </fieldset>
+            <fieldset name="advanced">
+				<field name="analytics" type="text" default="UA-XXXXX-X" label="TPL_JF3_FIELD_ANALYTICS_LABEL" description="TPL_JF3_FIELD_ANALYTICS_DESC" size="15" />
+                <field name="anonym" type="radio" default="1" label="TPL_JF3_FIELD_ANONYM_LABEL" description="TPL_JF3_FIELD_ANONYM_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="sozialbuttons" type="radio" default="1" label="TPL_JF3_FIELD_SOZIALB_LABEL" description="TPL_JF3_FIELD_SOZIALB_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="TPL_JF3_FIELD_SPACER_WRAPPER_DESC" type="spacer" hr="false" />
+				<field name="maxwidth" type="text" filter="integer" default="50" label="TPL_JF3_FIELD_MWIDTH_LABEL" description="TPL_JF3_FIELD_MWIDTH_DESC" size="4" ></field>
+                <field name="wunit" type="list" default="em" label="TPL_JF3_FIELD_WUNIT_LABEL" description="TPL_JF3_FIELD_WUNIT_DESC">
+                    <option value="em">em</option>
+                    <option value="px">px</option>
+                </field>
+                <field name="TPL_JF3_FIELD_SPACER_GRID_DESC" type="spacer" hr="false" />
+				<field name="gridsort" type="list" default="text" label="TPL_JF3_FIELD_GSORT_LABEL" description="TPL_JF3_FIELD_GSORT_DESC">
+					<option value='mr'>main | right</option>
+					<option value='lm'>left | main</option>
+				</field>
+                <field name="Slideshow layout" type="spacer" hr="false" />
+                <field name="slidethumb" type="radio" default="0" label="TPL_JF3_FIELD_SLIDETHUMB_LABEL" description="TPL_JJF3_FIELD_SLIDETHUMB_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

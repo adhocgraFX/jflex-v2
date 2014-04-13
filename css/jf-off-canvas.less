@@ -1,0 +1,714 @@
+// hack von Nathan Smith - obs was bringt?
+:focus {
+	-moz-outline-style: none !important;
+}
+
+/*    button style	*/
+.nav-btn:before, .nav-btn:after, .close-btn:after {
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.25em;
+	line-height: 1;
+	display: inline-block;
+	text-decoration: inherit;
+	padding: 0;
+}
+
+.nav-btn:before {
+	content: "\f0c9";
+	position: absolute;
+	left: 1em;
+	top: .5em;
+}
+
+.nav-btn:after {
+	content: "\f002";
+	position: absolute;
+	right: 1em;
+	top: .5em;
+}
+
+.close-btn:after {
+	content: "\f054";
+	position: absolute;
+	right: .65em;
+	top: .5em;
+}
+
+.nav-btn a, .close-btn a {
+	color: @white !important;
+}
+
+a.button.nav-btn, button.nav-btn, input[type="submit"].nav-btn, input[type="reset"].nav-btn, input[type="button"].nav-btn {
+	padding: .5em 1em !important;
+	margin: 1.2em 1em 0 1em !important;
+	text-align: center;
+	max-height: 3em !important;
+}
+
+a.button.close-btn, button.close-btn, input[type="submit"].close-btn, input[type="reset"].close-btn, input[type="button"].close-btn {
+	padding: .5em 1em !important;
+	margin: 0 !important;
+	text-align: center;
+	max-height: 3em !important;
+	width: 100% !important;
+}
+
+/* wrapper initial*/
+#outer-wrapper {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+#inner-wrapper {
+	position: relative;
+	width: 100%;
+}
+
+#nav .close-btn {
+	display: none;
+}
+
+#top {
+	z-index: 100;
+	position: relative;
+	color: #444;
+
+	.nav-btn {
+		position: relative;
+		top: 0;
+		left: 0;
+		font-size: 1em;
+	}
+}
+
+@media screen and (min-width: 47em) {
+
+	#top  {
+		padding: 1em 0;
+	}
+
+	#top .nav-btn {
+		border: 0;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
+
+	#nav .close-btn {
+		border: 0;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
+
+	// ab hier meine nav css todo noch zu verbessern
+	#nav {
+		z-index: 999;
+		position: relative;
+		padding: 0 .5em;
+		margin: 1em 0;
+		text-transform: uppercase;
+		text-align: center;
+
+		ul {
+			background: transparent;
+			display: inline-block;
+			zoom: 1;
+			*display: inline;
+			margin-bottom: 0 !important;
+		}
+
+		ul li ul li.active > a,
+		ul li ul li ul li.active > a{
+			color: @whitesmoke !important;
+			background: @concreteDark !important;
+
+			&:hover {
+				color: @whitesmoke;
+				background: @concreteDarker !important;
+			}
+
+			&:active, &:focus {
+				color: @whitesmoke;
+				background: darken(@concreteDarker, 10%) !important;
+			}
+		}
+		ul li.deeper.parent > a::after,
+		ul li ul li.deeper.parent > a::after {
+			font-family: FontAwesome;
+			font-weight: normal;
+			font-style: normal;
+			line-height: inherit;
+			display: inline-block;
+			text-decoration: inherit;
+			padding-left: .5em;
+			float: right;
+			content: "\f0d7"; // caret down
+		}
+
+		ul li.deeper.parent > a::after {
+			content: "\f0d7"; // caret down
+		}
+		ul li ul li.deeper.parent > a::after {
+			content: "\f0da"; // caret right
+		}
+
+		ul li {
+			float: left;
+			list-style: none;
+			position: relative;
+			border-right: .3em solid transparent;
+
+			&:nth-child(1) a::before {
+				font-family: FontAwesome;
+				font-weight: normal;
+				font-style: normal;
+				line-height: 1;
+				display: inline-block;
+				text-decoration: inherit;
+				padding-right: .5em;
+				content: "\f015";
+			}
+
+			a {
+				display: block;
+				padding: .5em 1em;
+				margin: .25em 0;
+				line-height: 1.5;
+				color: @concreteDarker;
+				background: @clouds;
+				font-weight: normal;
+				font-size: 1.125em;
+				text-decoration: none;
+				.border-radius(@baseBorderRadius);
+
+				&:hover {
+					color: @whitesmoke;
+					background: @concrete;
+				}
+
+				&:active, &:focus {
+					color: @whitesmoke;
+					background: @concreteDark;
+				}
+			}
+		}
+
+		ul li ul, ul li:hover ul li ul  {
+			display: none;
+		}
+
+		ul li ul li {
+			margin: 0 !important;
+			border-right: 0;
+			border-left: 0;
+			height: auto !important;
+		}
+
+		ul li:hover ul {
+			display: block;
+			position: absolute;
+			top: 3.25em;
+			left: -1px;
+			width: 14em;
+			margin: 0;
+			padding: .3em 0;
+			z-index: 99999999;
+			background: @white;
+			border: 1px solid @concreteDark;
+			.border-radius(@baseBorderRadius);
+			.box-shadow(@shadow);
+
+			li a {
+				text-align: left;
+				width: 12.4em;
+				height: auto !important;
+				.border-radius(0);
+				color: @whitesmoke;
+				background: @concrete;
+
+				&:hover {
+					color: @whitesmoke;
+					background: @concreteDark;
+					height: auto !important;
+				}
+
+				&:active, &:focus {
+					color: @whitesmoke;
+					background: @concreteDarker;
+					height: auto !important;
+				}
+
+				&::before {
+					padding-right: 0;
+					content: "";
+				}
+			}
+		}
+
+		ul li ul li:hover ul {
+			display: block;
+			position: absolute;
+			top: 1em;
+			left: 13em;
+			width: 14em;
+			margin: 0;
+			padding: .3em 0;
+			z-index: 99999999;
+			background: @white;
+			border: 1px solid @concreteDark;
+			.border-radius(@baseBorderRadius);
+			.box-shadow(@shadow);
+		}
+
+		ul li:nth-child(4) {
+
+			ul {
+				display: none;
+			}
+
+			ul li.deeper.parent > a::before {
+				font-family: FontAwesome;
+				font-weight: normal;
+				font-style: normal;
+				line-height: inherit;
+				display: inline-block;
+				padding-right: 1em;
+				text-decoration: inherit;
+				content: "\f0d9"; // caret left
+			}
+
+			ul li.deeper.parent > a::after {
+				content: "" !important; // caret right
+			}
+
+			&:hover ul li ul {
+				display: none;
+			}
+
+			&:hover ul {
+				display: block;
+				position: absolute;
+				top: 3.25em;
+				left: inherit;
+				right: 0;
+				width: 14em;
+				margin: 0;
+				padding: .3em 0;
+				z-index: 99999999;
+				background: @white;
+				border: 1px solid @concreteDark;
+				.border-radius(@baseBorderRadius);
+				.box-shadow(@shadow);
+			}
+
+			ul li:hover ul {
+				display: block;
+				position: absolute;
+				top: 1em;
+				right: 13em;
+				width: 14em;
+				margin: 0;
+				padding: .3em 0;
+				z-index: 99999999;
+				background: @white;
+				border: 1px solid @concreteDark;
+				.border-radius(@baseBorderRadius);
+				.box-shadow(@shadow);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 47em) {
+
+	// kombination beider css
+	#nav {
+		z-index: 200;
+		overflow: hidden;
+		width: 100%;
+		color: #444;
+		position: absolute;
+		top: 0;
+		padding: 5em 1em 0 1em;
+
+		.close-btn {
+			position: absolute;
+			top: -3.8em;
+			left: 0em;
+		}
+
+		.grid-100 {
+			position: relative;
+			padding: 0 !important;
+		}
+
+		.nav-close-pad {
+			z-index: 2;
+			position: relative;
+			background: transparent;
+		}
+
+		ul:before, ul:after {
+			content: "";
+			display: table;
+		}
+
+		ul:after {
+			clear: both;
+		}
+
+		ul:first-child {
+			border-top: 1px solid @midnightblueDark;
+		}
+
+		ul {
+			*zoom: 1;
+			display: block;
+		}
+
+		ul, li {
+			margin-top: 0 !important;
+			margin-bottom: 0 !important;
+		}
+
+		li {
+			display: block;
+			position: relative;
+
+			a {
+				display: block;
+				font-size: 1em;
+				line-height: 1.2em;
+				font-weight: normal;
+				outline: none;
+				padding: .75em .5em;
+				border-bottom: 1px solid @midnightblueDark;
+				color: @grayLighter;
+				text-shadow: -1px -1px 1px @gray;
+				text-decoration: none !important;
+
+				&:hover {
+					color: @white;
+					background: @midnightblueDark;
+					#translucent .background(@black, .15);
+				}
+
+				&:focus, &:active {
+					background: @midnightblueDark;
+					#translucent .background(@black, .3);
+				}
+			}
+		}
+
+		li.is-active a {
+			color: #111;
+		}
+
+		li li, li li li {
+			margin-left: 1em;
+		}
+
+	}
+
+	#nav:not(:target) {
+		z-index: 1;
+		height: 0;
+	}
+
+	#nav:target .close-btn {
+		display: block;
+	}
+
+	// meine fonts
+	#nav ul li a::after {
+		font-family: FontAwesome;
+		font-weight: normal;
+		font-style: normal;
+		line-height: 1;
+		display: inline-block;
+		text-decoration: inherit;
+		padding: 0;
+		content: "\f054";
+		position: absolute;
+		right: .85em;
+		top: .85em;
+	}
+
+	#nav li.is-active:after {
+		z-index: 50;
+		display: block;
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: -0.031em;
+		margin-top: -0.625em;
+		border-top: 0.625em transparent solid;
+		border-bottom: 0.625em transparent solid;
+		border-right: 0.625em white solid;
+	}
+
+	.no-js #nav-open-btn {
+		display: none !important;
+	}
+
+	.js-ready {
+		#nav {
+			height: 100%;
+			min-height: 1000em; // a little tricky
+			width: 80%;
+			background: @midnightblue;
+			-webkit-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
+			-moz-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
+			box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
+			left: -80%;
+
+			.grid-100 {
+				background: transparent;
+			}
+
+			.close-btn {
+				display: block;
+			}
+
+			.close-btn:focus, .close-btn:hover {
+			}
+		}
+
+		#canvas {
+			left: 0;
+		}
+	}
+
+	.js-nav #inner-wrapper {
+		left: 80%;
+	}
+
+	.csstransforms3d.csstransitions.js-ready #nav {
+		left: 0;
+		-webkit-transform: translate3d(-100%, 0, 0);
+		-moz-transform: translate3d(-100%, 0, 0);
+		-ms-transform: translate3d(-100%, 0, 0);
+		-o-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		-o-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+
+	.csstransforms3d.csstransitions.js-ready #inner-wrapper {
+		left: 0 !important;
+		-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
+		-o-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		-webkit-transition: -webkit-transform 500ms ease;
+		-moz-transition: -moz-transform 500ms ease;
+		-o-transition: -o-transform 500ms ease;
+		transition: transform 500ms ease;
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		-o-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+
+	.csstransforms3d.csstransitions.js-nav #inner-wrapper {
+		-webkit-transform: translate3d(80%, 0, 0) scale3d(1, 1, 1);
+		-moz-transform: translate3d(80%, 0, 0) scale3d(1, 1, 1);
+		-ms-transform: translate3d(80%, 0, 0) scale3d(1, 1, 1);
+		-o-transform: translate3d(80%, 0, 0) scale3d(1, 1, 1);
+		transform: translate3d(80%, 0, 0) scale3d(1, 1, 1);
+	}
+
+	.csstransforms3d.csstransitions.js-ready #nav .nav-close-pad {
+		filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+		opacity: 0.7;
+		-webkit-transition: opacity 300ms 100ms, -webkit-transform 500ms ease;
+		-webkit-transition-delay: ease, 0s;
+		-moz-transition: opacity 300ms 100ms ease, -moz-transform 500ms ease;
+		-o-transition: opacity 300ms 100ms ease, -o-transform 500ms ease;
+		transition: opacity 300ms 100ms ease, transform 500ms ease;
+		-webkit-transform: translate3d(80%, 0, 0) scale3d(0.9, 0.9, 0.9);
+		-moz-transform: translate3d(80%, 0, 0) scale3d(0.9, 0.9, 0.9);
+		-ms-transform: translate3d(80%, 0, 0) scale3d(0.9, 0.9, 0.9);
+		-o-transform: translate3d(80%, 0, 0) scale3d(0.9, 0.9, 0.9);
+		transform: translate3d(80%, 0, 0) scale3d(0.9, 0.9, 0.9);
+		-webkit-transform-origin: 50% 0%;
+		-moz-transform-origin: 50% 0%;
+		-ms-transform-origin: 50% 0%;
+		-o-transform-origin: 50% 0%;
+		transform-origin: 50% 0%;
+	}
+
+	.csstransforms3d.csstransitions.js-nav #nav .nav-close-pad {
+		filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
+		-o-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+
+	//	simple-nav
+	#simple-nav {
+		padding: 0 20px;
+		z-index: 999;
+		position: relative;
+		font-size: 1em;
+		margin: .5em 0;
+
+		ul {
+			margin: 0 !important;
+			padding: 0 !important;
+
+			li {
+				list-style: none;
+				position: relative;
+				margin: .25em 0 0 0;
+
+				a {
+					display: block;
+					padding: .5em 1em;
+					line-height: 1.4;
+					font-weight: normal;
+					text-decoration: none;
+					color: @gray;
+					background: @cloudsDark;
+					.border-radius(@baseBorderRadius);
+
+					&:hover {
+						color: @grayLighter;
+						background: @concrete;
+						.border-radius(@baseBorderRadius);
+					}
+
+					&:active, &:focus {
+						color: @grayLighter;
+						background: @concreteDark;
+						.border-radius(@baseBorderRadius);
+					}
+				}
+				ul li {
+					margin: .25em 0 0 1em;
+
+					&:hover ul li a {
+						display: block;
+						padding: .5em 1em;
+						line-height: 1.4;
+						font-weight: normal;
+						text-decoration: none;
+						color: @gray;
+						background: @cloudsDark;
+						.border-radius(@baseBorderRadius);
+
+						&:hover {
+							color: @grayLighter;
+							background: @concrete;
+							.border-radius(@baseBorderRadius);
+						}
+
+						&:active, &:focus {
+							color: @grayLighter;
+							background: @concreteDark;
+							.border-radius(@baseBorderRadius);
+						}
+					}
+
+					ul li {
+						margin: .25em 0 0 1em;
+
+						&:hover ul li a {
+							display: block;
+							padding: .5em 1em;
+							line-height: 1.4;
+							font-weight: normal;
+							text-decoration: none;
+							color: @gray;
+							background: @cloudsDark;
+							.border-radius(@baseBorderRadius);
+
+							&:hover {
+								color: @grayLighter;
+								background: @concrete;
+								.border-radius(@baseBorderRadius);
+							}
+
+							&:active, &:focus {
+								color: @grayLighter;
+								background: @concreteDark;
+								.border-radius(@baseBorderRadius);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// simple button
+	.nav-simple-btn {
+		padding: 1em 20px !important;
+		text-align: center;
+
+		a {
+			color: @gray;
+			background: @cloudsDark;
+			padding: .5em 1em;
+			.border-radius(@baseBorderRadius);
+			display: block;
+			width: 100%;
+			font-size: 1em;
+			font-weight: normal;
+			text-decoration: none;
+			cursor: pointer;
+			line-height: 1.4;
+
+			&:hover {
+				color: @grayLighter;
+				background: @concrete;
+			}
+
+			&:active, &:focus {
+				color: @grayLighter;
+				background: @concreteDark;
+			}
+		}
+	}
+
+	// meine fonts
+	#simple-nav ul li a::after, .nav-simple-btn a::after {
+		font-family: FontAwesome;
+		font-weight: normal;
+		font-style: normal;
+		line-height: 1;
+		display: inline-block;
+		text-decoration: inherit;
+		padding: 0;
+		content: "\f054";
+		position: absolute;
+		right: 30px;
+		top: .75em;
+	}
+
+	.nav-simple-btn a::after {
+		position: absolute;
+		right: 50px;
+		top: 1.7em;
+	}
+}
