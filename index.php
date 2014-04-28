@@ -14,6 +14,11 @@ $params = $app->getParams();
 $pageclass = $params->get('pageclass_sfx'); // parameter (menu entry)
 $tpath = $this->baseurl.'/templates/'.$this->template;
 
+// unset scripts
+// todo geht anscheinend nicht?!!
+unset($doc->_scripts[$this->baseurl.'/media/jui/js/jquery.min.js']);
+unset($doc->_scripts[$this->baseurl.'/media/jui/js/bootstrap.min.js']);
+
 $this->setGenerator(null);
 
 // mobile detect usage von Rene Kreijveld
@@ -37,11 +42,8 @@ $maintitle = $this->params->get('maintitle');
 $subtitle = $this->params->get('subtitle');
 $sozialbuttons = $this->params->get('sozialbuttons');
 
-// unset scripts
-unset($doc->_scripts[$this->baseurl.'/media/jui/js/jquery.min.js']);
-unset($doc->_scripts[$this->baseurl.'/media/jui/js/bootstrap.min.js']);
-
 // Add Joomla! JavaScript Frameworks
+// todo wird trotzdem geladen, obwohl ausmarkiert
 // JHtml::_('bootstrap.framework');
 
 // Add current user information
@@ -92,6 +94,12 @@ function() {
 </script>
 <?php endif; ?>
 
+<!-- squeezr probe -->
+<!-- todo wie krieg ich das zum Laufen? -->
+    <script type="text/javascript" id="squeezr" data-breakpoints-images="480,768,1024">
+        (function(a){function h(){for(var f,a=0,b=d.cookie.split(";"),c=/^\ssqueezr\.([^=]+)=(.*?)\s*$/,e={};b.length>a;++a)(f=b[a].match(c))&&(e[f[1]]=f[2]);return e}function i(a){a=Math.max(parseFloat(a||1,10),.01);var c=d.documentElement,f=function(){var a=d.createElement("div"),b={width:"1px",height:"1px",display:"inline-block"};for(var c in b)a.style[c]=b[c];return a},g=d.createElement("div"),h=g.appendChild(f());g.appendChild(f()),c.appendChild(g);for(var i=g.clientHeight,j=Math.floor(e/i),k=j/2,l=0,m=[j];1e3>l++&&(Math.abs(k)>a||g.clientHeight>i);)j+=k,h.style.width=j+"em",k/=(g.clientHeight>i?1:-1)*(k>0?-2:2),m.push(j);return c.removeChild(g),j}function j(a){for(var g,c=0,d=(a||"").split(","),e=/(\d+(?:\.\d+)?)(px)?/i,f=[];d.length>c;++c)(g=d[c].match(e))&&f.push(parseFloat(g[1],10));return f.sort(function(a,b){return a-b})}function k(){return"devicePixelRatio"in a?a.devicePixelRatio:"deviceXDPI"in a&&"logicalXDPI"in a?a.deviceXDPI/a.logicalXDPI:1}if(navigator.cookieEnabled)for(var b="squeezr",c=";path=/",d=document,e=a.innerWidth,f=screen.width,g=screen.height,m=0,n=d.getElementsByTagName("script");n.length>m;++m)if(n[m].id==b){var o=k(),p="-";if(d.cookie=b+".screen="+f+"x"+g+"@"+o+c,!n[m].getAttribute("data-disable-images")){var q=j(n[m].getAttribute("data-breakpoints-images")),r=Math.max(f,g),s=null;do{if(r>(s=q.pop()))break;p=s*o+"px"}while(q.length)}d.cookie=b+".images="+p+c;var t=h(),u=t.css||"-";if(!("css"in t&&t.css&&"-"!=t.css||n[m].getAttribute("data-disable-css"))){var v=e/i(parseFloat(n[m].getAttribute("data-em-precision")||.5,10)/100);u=f+"x"+g+"@"+Math.round(10*v)/10}d.cookie=b+".css="+u+c;break}})(this);
+    </script>
+
 <jdoc:include type="head" />
 
 <!-- Mobile Specific Metas -->
@@ -121,28 +129,31 @@ function() {
 <div id="outer-wrapper">
 	<?php if ($layout == 'mobile'):?>
 	    <noscript>
-	        <div class="nav-simple-btn" role="navigation" > <a href="#simple-nav">Simple Navigation</a> </div>
+	        <div class="nav-simple-btn" role="navigation" >
+                <a href="#simple-nav">Simple Navigation</a>
+            </div>
 	    </noscript>
 	<?php endif; ?>
     <!--  innerer Rahmen  -->
     <div id="inner-wrapper" class="stickem-container">
         <!-- header -->
         <header id="top" role="banner">
-            <?php if ($layout == 'mobile'):?>
-                <div role="navigation" >
-				    <button class="btn btn-inverse nav-btn" id="nav-open-btn" >
-				        <a href="#nav"><?php echo JText::_('TPL_JF3_NAVOPEN'); ?></a>
-				    </button>
-			    </div>
-            <?php endif;?>
+            <div role="navigation" >
+				<button class="btn btn-inverse nav-btn" id="nav-open-btn" >
+				    <a href="#nav"><?php echo JText::_('TPL_JF3_NAVOPEN'); ?></a>
+				</button>
+			</div>
             <!-- seitliches logobild  -->
             <?php if ($headerlogo): ?>
-                <?php if ($layout != 'mobile'):?>
-                    <div class="headerlogo"> <a href="<?php echo $this->baseurl ?>"> <img src="<?php echo $this->baseurl ?>/<?php echo htmlspecialchars($headerlogo); ?>"  alt="<?php echo htmlspecialchars($sitetitle); ?>" /> </a> </div>
-                <?php endif;?>
+                <div class="headerlogo"><a href="<?php echo $this->baseurl ?>">
+                    <img src="<?php echo $this->baseurl ?>/<?php echo htmlspecialchars($headerlogo); ?>"  alt="<?php echo htmlspecialchars($sitetitle); ?>" /></a>
+                </div>
             <?php endif;?>
             <!-- logotext  -->
-            <div class="logotext stickem"> <a href="<?php echo $this->baseurl ?>"><h1 class="logotext-top"><?php echo htmlspecialchars($maintitle); ?></h1><h1 class="logotext-sub"><?php echo htmlspecialchars($subtitle); ?></h1> </a> </div>
+            <div class="logotext stickem"><a href="<?php echo $this->baseurl ?>">
+                    <h1 class="logotext-top"><?php echo htmlspecialchars($maintitle); ?></h1>
+                    <h1 class="logotext-sub"><?php echo htmlspecialchars($subtitle); ?></h1></a>
+            </div>
             <!-- slideshow -->
             <?php if ($layout != 'mobile'):?>
                 <?php if ($this->countModules('slideshow')): ?>
@@ -308,8 +319,11 @@ function() {
 <jdoc:include type="modules" name="debug" />
 
 <!--  load plugin scripts -->
-<?php if ($layout != 'mobile'):?>
+
+<?php if ($layout == 'desktop'):?>
     <script type="text/javascript" src="<?php echo $tpath.'/js/template.desktop.js.php';?>"></script>
+<?php elseif ($layout == 'tablet'):?>
+    <script type="text/javascript" src="<?php echo $tpath.'/js/template.tablet.js.php';?>"></script>
 <?php elseif ($layout == 'mobile'):?>
     <script type="text/javascript" src="<?php echo $tpath.'/js/template.mobile.js.php';?>"></script>
 <?php endif; ?>

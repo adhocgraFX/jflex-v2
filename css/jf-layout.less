@@ -15,7 +15,18 @@
 /* media queries
 ======================================================== */
 
-@media screen and (max-width: 47em) {
+@media screen and (max-width: 48em) {
+
+	div.headerlogo {
+		border: 0;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
 
 	.breadcrumb li:first-child, .breadcrumb li:last-child, .breadcrumb li a {
 		padding: .5em;
@@ -547,7 +558,7 @@ header {
 			background: @concrete !important;
 		}
 
-		&.accordion-parent.odd {
+		&.accordion-parent {
 			text-decoration: none !important;
 			//color: @concreteDarker !important;
 			//background: @cloudsDark !important;
@@ -559,7 +570,7 @@ header {
 				display: inline-block;
 				text-decoration: inherit;
 				padding-right: 1em;
-				content: "\F138"; // chevron right
+				content: "\F13A"; // chevron sign down
 			}
 
 			&.collapsed:before {
@@ -569,7 +580,7 @@ header {
 				display: inline-block;
 				text-decoration: inherit;
 				padding-right: 1em;
-				content: "\F13A"; // chevron sign down
+				content: "\F139"; // chevron sign up
 			}
 
 			/*&:hover {
