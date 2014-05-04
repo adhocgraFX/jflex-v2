@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8b09531-956b-4857-b7e1-5c32221c5a0b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/template.tablet.js.php" />
+    <list default="true" id="c8b09531-956b-4857-b7e1-5c32221c5a0b" name="Default" comment="some tablet view problems solved">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/template.desktop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/template.desktop.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/template.mobile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/template.mobile.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/template.tablet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/template.tablet.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/com_content/article/default.php" afterPath="$PROJECT_DIR$/html/com_content/article/default.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jf-base.less" afterPath="$PROJECT_DIR$/css/jf-base.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jf-layout.less" afterPath="$PROJECT_DIR$/css/jf-layout.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jf-off-canvas.less" afterPath="$PROJECT_DIR$/css/jf-off-canvas.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jf-template.css" afterPath="$PROJECT_DIR$/css/jf-template.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/template.desktop.js.php" afterPath="$PROJECT_DIR$/js/template.desktop.js.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/template.mobile.js.php" afterPath="$PROJECT_DIR$/js/template.mobile.js.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/template.tablet.js.php" afterPath="$PROJECT_DIR$/js/template.tablet.js.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jflex.iws" />
@@ -31,41 +40,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="325" column="78" selection-start="18423" selection-end="18423" vertical-scroll-proportion="-12.684211" vertical-offset="8943" max-vertical-offset="9860">
+            <state line="317" column="82" selection-start="18111" selection-end="18111" vertical-scroll-proportion="10.025082" vertical-offset="0" max-vertical-offset="9570">
               <folding>
-                <element signature="n#style#0;n#jdoc:include#0;n#div#1;n#nav#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#jdoc:include#0;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#jdoc:include#1;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#jdoc:include#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1398694492946" expanded="false" signature="3354:3366" placeholder="..." />
+                <marker date="1399218394899" expanded="false" signature="2899:2911" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jf-layout.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/jf-layout.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="402" selection-end="402" vertical-scroll-proportion="-8.026316" vertical-offset="188" max-vertical-offset="45733">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jf-off-canvas.less" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/jf-off-canvas.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="5" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.2693566" vertical-offset="2363" max-vertical-offset="20851">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -99,10 +80,16 @@
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/js/Mobile_Detect.php" />
         <option value="$PROJECT_DIR$/css/jf-base.less" />
-        <option value="$PROJECT_DIR$/css/jf-layout.less" />
-        <option value="$PROJECT_DIR$/js/template.tablet.js.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/jf-off-canvas.less" />
+        <option value="$PROJECT_DIR$/js/template.mobile.js.php" />
+        <option value="$PROJECT_DIR$/js/template.tablet.js.php" />
+        <option value="$PROJECT_DIR$/js/template.desktop.js.php" />
+        <option value="$PROJECT_DIR$/js/template.mobile.js" />
+        <option value="$PROJECT_DIR$/js/template.tablet.js" />
+        <option value="$PROJECT_DIR$/js/template.desktop.js" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/html/com_content/article/default.php" />
+        <option value="$PROJECT_DIR$/css/jf-layout.less" />
       </list>
     </option>
   </component>
@@ -177,16 +164,70 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jflex" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jflex" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template.tablet.js" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jflex" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jflex" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template.mobile.js" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jflex" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jflex" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template.desktop.js" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="settings.github" />
+    <property name="options.lastSelected" value="settings" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../styleguide" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
     <property name="FullScreen" value="false" />
@@ -253,19 +294,24 @@
       <created>1398358565353</created>
       <updated>1398358565353</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="some tablet view problems solved">
+      <created>1398696324386</created>
+      <updated>1398696324386</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26770386" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25107297" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26770386" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19903433" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -274,11 +320,10 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -297,121 +342,13 @@
     </option>
     <MESSAGE value="variables text sizes changed" />
     <MESSAGE value="new mobile detect php" />
-    <option name="LAST_COMMIT_MESSAGE" value="new mobile detect php" />
+    <MESSAGE value="some tablet view problems solved" />
+    <option name="LAST_COMMIT_MESSAGE" value="some tablet view problems solved" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="16" selection-start="4545" selection-end="4545" vertical-scroll-proportion="0.0" vertical-offset="2784" max-vertical-offset="9686">
-          <folding>
-            <element signature="n#style#0;n#jdoc:include#0;n#div#1;n#nav#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#1;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1398694492946" expanded="false" signature="3354:3366" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/jf-layout.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="561" column="54" selection-start="8808" selection-end="8808" vertical-scroll-proportion="0.0" vertical-offset="16269" max-vertical-offset="45414">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="268" column="26" selection-start="14335" selection-end="14335" vertical-scroll-proportion="0.0" vertical-offset="7076" max-vertical-offset="9454">
-          <folding>
-            <element signature="n#style#0;n#jdoc:include#0;n#div#1;n#nav#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#1;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1398694492946" expanded="false" signature="3354:3366" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/jf-layout.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="297" column="9" selection-start="4409" selection-end="4409" vertical-scroll-proportion="0.0" vertical-offset="7957" max-vertical-offset="45414">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0" vertical-offset="551" max-vertical-offset="9454">
-          <folding>
-            <element signature="n#style#0;n#jdoc:include#0;n#div#1;n#nav#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#1;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1398694492946" expanded="false" signature="3354:3366" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0" vertical-offset="551" max-vertical-offset="9454">
-          <folding>
-            <element signature="n#style#0;n#jdoc:include#0;n#div#1;n#nav#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#1;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1398694492946" expanded="false" signature="3354:3366" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="196" column="27" selection-start="9764" selection-end="9764" vertical-scroll-proportion="0.0" vertical-offset="5202" max-vertical-offset="9454">
-          <folding>
-            <element signature="n#style#0;n#jdoc:include#0;n#div#1;n#nav#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#1;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1398694492946" expanded="false" signature="3354:3366" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/jf-variables.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="147" column="27" selection-start="3769" selection-end="3769" vertical-scroll-proportion="0.0" vertical-offset="4263" max-vertical-offset="8584" />
@@ -424,19 +361,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="196" column="27" selection-start="9764" selection-end="9764" vertical-scroll-proportion="0.0" vertical-offset="5202" max-vertical-offset="9454">
+        <state line="196" column="27" selection-start="9764" selection-end="9764" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9454">
           <folding>
-            <element signature="n#style#0;n#jdoc:include#0;n#div#1;n#nav#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#1;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1398694492946" expanded="false" signature="3354:3366" placeholder="..." />
+            <marker date="1399218394899" expanded="false" signature="2899:2911" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -455,17 +382,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="196" column="27" selection-start="9764" selection-end="9764" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9454">
           <folding>
-            <element signature="n#style#0;n#jdoc:include#0;n#div#1;n#nav#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#1;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1398694492946" expanded="false" signature="3354:3366" placeholder="..." />
+            <marker date="1399218394899" expanded="false" signature="2899:2911" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -484,46 +401,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="196" column="27" selection-start="9764" selection-end="9764" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9454">
           <folding>
-            <element signature="n#style#0;n#jdoc:include#0;n#div#1;n#nav#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#1;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1398694492946" expanded="false" signature="3354:3366" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/jf-variables.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="27" selection-start="3769" selection-end="3769" vertical-scroll-proportion="0.0" vertical-offset="4263" max-vertical-offset="8584" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/jf-layout.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="0" selection-start="1526" selection-end="1526" vertical-scroll-proportion="0.0" vertical-offset="1406" max-vertical-offset="45414" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="196" column="27" selection-start="9764" selection-end="9764" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9454">
-          <folding>
-            <element signature="n#style#0;n#jdoc:include#0;n#div#1;n#nav#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#1;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1398694492946" expanded="false" signature="3354:3366" placeholder="..." />
+            <marker date="1399218394899" expanded="false" signature="2899:2911" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -580,73 +458,240 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/plugin.js.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5800">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/template.tablet.js.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="32" selection-start="827" selection-end="827" vertical-scroll-proportion="0.7483871" vertical-offset="0" max-vertical-offset="930">
-          <folding>
-            <element signature="e#6#372#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/template.mobile.js.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="16" selection-start="547" selection-end="547" vertical-scroll-proportion="0.28064516" vertical-offset="0" max-vertical-offset="930">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/template.desktop.js.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="638">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="325" column="78" selection-start="18423" selection-end="18423" vertical-scroll-proportion="-12.684211" vertical-offset="8943" max-vertical-offset="9860">
-          <folding>
-            <element signature="n#style#0;n#jdoc:include#0;n#div#1;n#nav#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#1;n#aside#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#jdoc:include#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1398694492946" expanded="false" signature="3354:3366" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/off-canvas.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2813">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2813" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/jf-layout.less">
+    <entry file="file://$PROJECT_DIR$/css/jf-template.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="402" selection-end="402" vertical-scroll-proportion="-8.026316" vertical-offset="188" max-vertical-offset="45733">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="986">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/jf-off-canvas.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="5" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.2693566" vertical-offset="2363" max-vertical-offset="20851">
+        <state line="90" column="5" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.648855" vertical-offset="2015" max-vertical-offset="20851">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/com_content/featured/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="3" selection-start="244" selection-end="245" vertical-scroll-proportion="-0.8613861" vertical-offset="0" max-vertical-offset="2784">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/com_content/featured/default_item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="231" column="19" selection-start="9789" selection-end="9791" vertical-scroll-proportion="-2.8118813" vertical-offset="6241" max-vertical-offset="7685">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.smooth-scroll.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="4" selection-start="4" selection-end="4" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="926">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/footable-0.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="4" selection-start="0" selection-end="6852" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="926">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.cookie.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="926">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.textresizer.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="926">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.syncheight.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="926">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.stickem.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="22" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="926">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/responsiveslides.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="926">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/doubletaptogo.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="483" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="926">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/off-canvas.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="926">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/template.desktop.js.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="0" selection-start="2025" selection-end="2025" vertical-scroll-proportion="0.8040541" vertical-offset="678" max-vertical-offset="1566">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/template.tablet.js.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="0" selection-start="1976" selection-end="1976" vertical-scroll-proportion="0.5754505" vertical-offset="823" max-vertical-offset="1711">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/template.mobile.js.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="1" selection-start="1738" selection-end="1738" vertical-scroll-proportion="0.4940022" vertical-offset="765" max-vertical-offset="1682">
+          <folding>
+            <element signature="e#6#372#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/template.desktop.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="955">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/template.mobile.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="955">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/template.tablet.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="955">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/template.desktop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="20167" selection-end="20167" vertical-scroll-proportion="0.6376963" vertical-offset="0" max-vertical-offset="955">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/template.mobile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="14921" selection-end="14921" vertical-scroll-proportion="0.45549738" vertical-offset="0" max-vertical-offset="955">
+          <folding>
+            <element signature="e#0#48#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/template.tablet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="19932" selection-end="19932" vertical-scroll-proportion="0.7591623" vertical-offset="0" max-vertical-offset="955">
+          <folding>
+            <element signature="e#0#48#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/plugin.js.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.8920393" vertical-offset="3569" max-vertical-offset="5800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/layouts/joomla/content/icons.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="3" selection-start="239" selection-end="240" vertical-scroll-proportion="0.09487459" vertical-offset="0" max-vertical-offset="1218">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/layouts/joomla/content/blog_style_default_item_title.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="3" selection-start="239" selection-end="240" vertical-scroll-proportion="-0.075245366" vertical-offset="156" max-vertical-offset="1073">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/com_content/icons.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="3" selection-start="239" selection-end="240" vertical-scroll-proportion="-0.23336968" vertical-offset="301" max-vertical-offset="1218">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/com_content/category/default_articles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="16" selection-start="664" selection-end="666" vertical-scroll-proportion="-5.0305343" vertical-offset="5077" max-vertical-offset="6032">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/com_content/category/blog_item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="57" selection-start="704" selection-end="704" vertical-scroll-proportion="0.50599784" vertical-offset="0" max-vertical-offset="2436">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/com_content/category/blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="3" selection-start="244" selection-end="245" vertical-scroll-proportion="0.09487459" vertical-offset="0" max-vertical-offset="3248">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/com_content/article/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="62" selection-start="5298" selection-end="5298" vertical-scroll-proportion="0.7906216" vertical-offset="2349" max-vertical-offset="8468">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/jf-layout.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="130" column="21" selection-start="2186" selection-end="2186" vertical-scroll-proportion="0.39585605" vertical-offset="3407" max-vertical-offset="45733">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="317" column="82" selection-start="18111" selection-end="18111" vertical-scroll-proportion="10.025082" vertical-offset="0" max-vertical-offset="9570">
+          <folding>
+            <marker date="1399218394899" expanded="false" signature="2899:2911" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

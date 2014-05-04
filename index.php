@@ -14,11 +14,6 @@ $params = $app->getParams();
 $pageclass = $params->get('pageclass_sfx'); // parameter (menu entry)
 $tpath = $this->baseurl.'/templates/'.$this->template;
 
-// unset scripts
-// todo geht anscheinend nicht?!!
-unset($doc->_scripts[$this->baseurl.'/media/jui/js/jquery.min.js']);
-unset($doc->_scripts[$this->baseurl.'/media/jui/js/bootstrap.min.js']);
-
 $this->setGenerator(null);
 
 // mobile detect usage von Rene Kreijveld
@@ -43,8 +38,7 @@ $subtitle = $this->params->get('subtitle');
 $sozialbuttons = $this->params->get('sozialbuttons');
 
 // Add Joomla! JavaScript Frameworks
-// todo wird trotzdem geladen, obwohl ausmarkiert
-// JHtml::_('bootstrap.framework');
+JHtml::_('bootstrap.framework');
 
 // Add current user information
 $user = JFactory::getUser();
@@ -60,10 +54,6 @@ $user = JFactory::getUser();
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="<?php echo $this->language; ?>" class="no-js" xmlns="http://www.w3.org/1999/html"><!--<![endif]-->
 
 <head>
-
-<!-- js framework via cdn -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 
 <!-- fonts -->
 <?php if ($headfont != "default"): ?>
@@ -321,11 +311,11 @@ function() {
 <!--  load plugin scripts -->
 
 <?php if ($layout == 'desktop'):?>
-    <script type="text/javascript" src="<?php echo $tpath.'/js/template.desktop.js.php';?>"></script>
+    <script type="text/javascript" src="<?php echo $tpath.'/js/template.desktop.min.js';?>"></script>
 <?php elseif ($layout == 'tablet'):?>
-    <script type="text/javascript" src="<?php echo $tpath.'/js/template.tablet.js.php';?>"></script>
+    <script type="text/javascript" src="<?php echo $tpath.'/js/template.tablet.min.js';?>"></script>
 <?php elseif ($layout == 'mobile'):?>
-    <script type="text/javascript" src="<?php echo $tpath.'/js/template.mobile.js.php';?>"></script>
+    <script type="text/javascript" src="<?php echo $tpath.'/js/template.mobile.min.js';?>"></script>
 <?php endif; ?>
 
 <!-- load plugin options -->
